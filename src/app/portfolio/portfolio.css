@@ -1,0 +1,30 @@
+section {
+  margin: 150px 0;
+}
+
+.portfolio-item {
+  cursor: pointer;
+}
+.portfolio-item:hover .layer {
+  opacity: 0.8;
+}
+.layer {
+  position: absolute;
+  background-color: rgb(13, 110, 253);
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.vector {
+  height: 4px;
+  width: 80px;
+  background-color: black;
+}
+.my-vector i {
+  margin: 0 15px;
+  color: black;
+}

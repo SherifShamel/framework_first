@@ -1,0 +1,43 @@
+.myIcon{
+    position:relative;
+    width: 130px;
+    justify-self: center;
+}
+
+.myIcon::after {
+  content: "";
+  width: 45px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.myIcon::before {
+  content: "";
+  width: 45px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+section{
+    background-color: var(--main-color);
+}
+.content{
+    height: 60vh;
+}
+
+.vector{
+    height: 4px;
+    width: 80px;
+    background-color: white;
+}
+.my-vector i{
+    margin: 0 15px;
+}

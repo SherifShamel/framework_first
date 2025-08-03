@@ -1,0 +1,52 @@
+<section>
+    <div class="container">
+    <div class="text-center fs-1 fw-bold">
+        Portfolio Component
+    </div>
+    <div class="d-flex justify-content-center align-items-center my-vector">
+        <div class="vector"></div>
+        <i class="fa-solid fa-star text-center"></i>
+        <div class="vector"></div>
+    </div>
+</div>
+
+
+<div class="container mt-4 p-3">
+    <div class="row g-3">
+        @for (portfolioItem of portfolioItems; track portfolioItem.id) {
+        <div class="col-md-4">
+            <div class="portfolio-item position-relative">
+                <img [src]="portfolioItem.imageSrc" class="w-100 rounded-3" alt="" data-bs-toggle="modal"
+                    [attr.data-bs-target]="portfolioItem.id">
+                <div class="layer rounded-3 d-flex justify-content-center align-items-center"
+                    [attr.data-bs-target]="'#'+portfolioItem.id" data-bs-toggle="modal">
+                    <i class="fa-solid fa-plus fa-6x text-white"></i>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
+
+<!-- Modal -->
+@for (portfolioItem of portfolioItems; track $index) {
+<div class="modal fade" id="{{portfolioItem.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">{{portfolioItem.title}}</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="item">
+                    <img [src]="portfolioItem.imageSrc" [alt]="portfolioItem.title" class="w-100">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary mx-auto" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+}
+</section>

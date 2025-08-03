@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --header-footer-color: #2c3e50;
+  --copywrite-color: #1a252f;
+  --main-color: #1abc9c;
+}
+
+.main-color {
+  background-color: var(--main-color);
+}
+
+.header-footer {
+  background-color: var(--header-footer-color);
+}
+.copywrite {
+  background-color: var(--copywrite-color);
+}
+
+.btn-primary {
+  border: 0;
+}
+.btn-primary:hover {
+  background-color: var(--copywrite-color);
+}
