@@ -1,0 +1,8 @@
+.vector {
+  height: 4px;
+  width: 80px;
+  background-color: white;
+}
+.my-vector i {
+  margin: 0 15px;
+}

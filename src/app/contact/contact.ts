@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Star } from "../components/star/star";
 
 @Component({
   selector: 'app-contact',
-  imports: [],
+  imports: [Star],
   templateUrl: './contact.html',
   styleUrl: './contact.css',
 })

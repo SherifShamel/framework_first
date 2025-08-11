@@ -1,3 +1,8 @@
 .container {
   color: white;
 }
+
+.around-web i{
+  width: 20px;
+  height: 20px;
+}

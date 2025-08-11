@@ -1,7 +1,7 @@
-.myIcon{
-    position:relative;
-    width: 130px;
-    justify-self: center;
+.myIcon {
+  position: relative;
+  width: 130px;
+  justify-self: center;
 }
 
 .myIcon::after {
@@ -26,18 +26,12 @@
   transform: translateY(-50%);
 }
 
-section{
-    background-color: var(--main-color);
-}
-.content{
-    height: 60vh;
+section {
+  background-color: var(--main-color);
 }
 
-.vector{
-    height: 4px;
-    width: 80px;
-    background-color: white;
+.content {
+  height: 60vh;
 }
-.my-vector i{
-    margin: 0 15px;
-}
+
+

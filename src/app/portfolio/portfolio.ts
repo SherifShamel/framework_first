@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Star } from "../components/star/star";
 
 interface IPortfolio {
   id: number;
@@ -8,7 +9,7 @@ interface IPortfolio {
 
 @Component({
   selector: 'app-portfolio',
-  imports: [],
+  imports: [Star],
   templateUrl: './portfolio.html',
   styleUrl: './portfolio.css',
 })

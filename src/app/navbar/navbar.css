@@ -1,3 +1,6 @@
 .main-color{
     background-color: var(--main-color);
 }
+.navbar{
+    transition: all 0.3s;
+}
